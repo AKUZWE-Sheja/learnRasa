@@ -1,0 +1,6 @@
+venv_rasa/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.env

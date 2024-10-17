@@ -1,0 +1,70 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: mood_great_en
+  - action: utter_happy_en
+
+- story: sad path 1
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: mood_unhappy_en
+  - action: utter_cheer_up_en
+  - action: utter_did_that_help_en
+  - intent: affirm_en
+  - action: utter_happy_en
+
+- story: sad path 2
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: mood_unhappy_en
+  - action: utter_cheer_up_en
+  - action: utter_did_that_help_en
+  - intent: deny_en
+  - action: utter_goodbye_en
+
+- story: greet in English
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+
+- story: greet in Kinyarwanda
+  steps:
+  - intent: greet_rw
+  - action: utter_greet_rw
+
+- story: goodbye in English
+  steps:
+  - intent: goodbye_en
+  - action: utter_goodbye_en
+
+- story: goodbye in Kinyarwanda
+  steps:
+  - intent: goodbye_rw
+  - action: utter_goodbye_rw
+
+- story: ask child protection in English
+  steps:
+  - intent: ask_child_protection_en
+  - action: utter_child_protection_en
+
+- story: ask child protection in Kinyarwanda
+  steps:
+  - intent: ask_child_protection_rw
+  - action: utter_child_protection_rw
+
+- story: ask gender equality in English
+  steps:
+  - intent: ask_gender_equality_en
+  - action: utter_gender_equality_en
+
+- story: ask gender equality in Kinyarwanda
+  steps:
+  - intent: ask_gender_equality_rw
+  - action: utter_gender_equality_rw

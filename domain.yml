@@ -1,0 +1,97 @@
+version: "3.1"
+
+intents:
+- out_of_scope
+- bot_challenge
+- greet_en
+- greet_rw
+- goodbye_en
+- goodbye_rw
+- affirm_en
+- affirm_rw
+- deny_en
+- deny_rw
+- ask_anti_gbv_en
+- ask_anti_gbv_rw
+- ask_child_protection_en
+- ask_child_protection_rw
+- ask_gender_equality_en
+- ask_gender_equality_rw
+- ask_contact_info_en
+- ask_contact_info_rw
+- mood_great_en
+- mood_great_rw
+- mood_unhappy_en
+- mood_unhappy_rw
+
+responses:
+
+  utter_greet_en:
+    - text: "Hello! How can I assist you?"
+  utter_greet_rw:
+    - text: "Muraho! Ni iki nakumarira?"
+
+  utter_goodbye_en:
+    - text: "Goodbye!"
+  utter_goodbye_rw:
+    - text: "Murabeho!"
+
+  utter_affirm_en:
+    - text: "Great!"
+  utter_affirm_rw:
+    - text: "Ni byiza!"
+
+  utter_deny_en:
+    - text: "Okay, let me know if I can help with something else."
+  utter_deny_rw:
+    - text: "Niba hari ikindi cyakubera kiza, mbwira."
+
+  utter_cheer_up_en:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help_en:
+  - text: "Did that help you?"
+
+  utter_happy_en:
+  - text: "Great, carry on!"
+
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+
+  utter_out_of_scope:
+  - text: I'm sorry, I don't have an answer for that. Could you try asking something else?
+
+  utter_child_protection_en:
+    - text: "The ministry has child protection services to ensure children' s safety."
+  utter_child_protection_rw:
+    - text: "Minisiteri ifite serivisi z' uburenganzira bw' abana kugira ngo bakumirwe ihohoterwa."
+
+  utter_gender_equality_en:
+    - text: "The ministry promotes gender equality through various programs."
+  utter_gender_equality_rw:
+    - text: "Minisiteri itanga gahunda zitandukanye zigamije uburinganire."
+
+  utter_anti_gbv_en:
+    - text: "The ministry fights against GBV through preventive measures and support services."
+  utter_anti_gbv_rw:
+    - text: "Minisiteri irwanya ihohoterwa rishingiye ku gitsina binyuze mu gukumira no gutanga ubufasha."
+
+  utter_contact_info_en:
+    - text: "You can contact us at 123-456-789 or visit our website www.example.com."
+  utter_contact_info_rw:
+    - text: "Mwaduhamagara kuri 123-456-789 cyangwa musure urubuga rwacu www.example.com."
+
+  utter_mood_great_en:
+    - text: "I'm glad you're feeling great!"
+  utter_mood_great_rw:
+    - text: "Ndishimye ko wumva umeze neza!"
+
+  utter_mood_unhappy_en:
+    - text: "I'm sorry you're feeling down. Is there anything I can do to help?"
+  utter_mood_unhappy_rw:
+    - text: "Mbabajwe n' uko utameze neza. Hari icyo nshobora kugufasha?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

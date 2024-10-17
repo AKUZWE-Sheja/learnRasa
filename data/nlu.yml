@@ -1,0 +1,173 @@
+version: "3.1"
+nlu:
+- intent: greet_en
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: greet_rw
+  examples: |
+    - Muraho
+    - Bite
+    - Bite?
+    - Mwiriwe
+    - Amakuru
+    - Umeze neza?
+    - Mwaramutse
+- intent: goodbye_en
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: goodbye_rw
+  examples: |
+    - Murabeho
+    - Tura tuzabonana
+    - Ijoro ryiza
+    - Ndagiye
+- intent: affirm_en
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: affirm_rw
+  examples: |
+    - yego
+    - rwose
+    - koko
+    - nibyo
+- intent: deny_en
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: deny_rw
+  examples: |
+    - oya
+    - sibyo
+    - nta
+    - sinemeranya
+- intent: mood_great_en
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_great_rw
+  examples: |
+    - Ni byiza
+    - N' umunsi mwiza
+    - Ndumva nishimye cyane
+- intent: mood_unhappy_en
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - I'm feeling down
+    - I feel bad
+    - I'm not in a good mood
+    - Today is terrible
+    - I'm having a rough day
+- intent: mood_unhappy_rw
+  examples: |
+    - Ntabwo meze neza
+    - Ndumva mfite agahinda
+    - Umunsi wanjye ntiwameze neza
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_child_protection_en
+  examples: |
+    - What are the policies for child protection?
+    - Tell me about child protection services
+    - How does the ministry handle child protection issues?
+- intent: ask_child_protection_rw
+  examples: |
+    - Ni iki kibazo k' uburenganzira bw' abana?
+    - Niba mwadufasha kuvuga ku burenganzira bw'abana
+- intent: ask_gender_equality_en
+  examples: |
+    - Can you tell me about gender equality policies?
+    - What is the ministry doing for gender equality?
+    - What is gender equality?
+- intent: ask_gender_equality_rw
+  examples: |
+    - Mwambwira ibijyanye n'uburinganire?
+    - Uburinganire ni iki?
+- intent: ask_anti_gbv_en
+  examples: |
+    - What is GBV?
+    - What is gender-based violence?
+    - How does the ministry fight against GBV?
+    - Can you tell me about gender-based violence?
+    - How do we prevent GBV?
+    - Tell me more about gender-based violence measures.
+- intent: ask_anti_gbv_rw
+  examples: |
+    - Ni iki GBV?
+    - Ni iki gikorwa kugira ngo turwanye ihohoterwa rishingiye ku gitsina?
+- intent: ask_contact_info_en
+  examples: |
+    - Can I have your contact information?
+    - What is your contact number?
+    - I need to contact the Ministry.
+    - What are your contact details?
+    - How do I get in touch with you?
+    - Can I speak to someone at the Ministry?
+- intent: ask_contact_info_rw
+  examples: |
+    - Nabona amakuru yanyu gute?
+    - Mwaduhereza nimero ya telefone?
+- intent: out_of_scope
+  examples: |
+    - I need help with something else
+    - What is the meaning of life?
+    - Can you help me with my car insurance?
